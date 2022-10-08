@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Thiago Honorato">
+    <meta name="description" content="Portfólio do Desenvolvedor Front-end Thiago Honorato">
+    <meta name="keywords" content="portfolio, html, front-end, desenvolvimento, html,css, javascript">
+    <title>Thiago Honorato</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+    <link rel="stylesheet" href="estilo/style.css" media="all">
+    <link rel="stylesheet" href="estilo/media-query.css">
+    <link rel="shortcut icon" href="icone/favicon-32x32.png" type="image/x-icon">
+</head>
+<body>
+    <header>
+        <p>&lt; Th &gt;</p>
+        <span id="burguer" class="material-icons" onclick="clickMenu()">menu</span>
+        <nav id="itens">
+            <ul>
+                <li><a href="#"><span class="material-icons">home</span> Início</a></li>
+                <li><a href="#sobre"><span class="material-icons">perm_identity</span>Sobre mim</a></li>
+                <li><a href="#experiencia"><span class="material-icons">code</span>Experiência</a></li>
+                <li><a href="#projetos"><span class="material-icons">work</span>Projetos</a></li>
+                <li><a href="#contato"><span class="material-icons">contact_page</span>Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="ola">
+            <h1>Olá! </h1>
+            <h2><br> Prazer, meu nome é Thiago Honorato,<br>sou Desenvolvedor Front-end.<br> Seja Bem-vindo!</h2>
+            <img src="imagens/gif GitHub coding.gif" alt="man coding">
+        </section>
+        
+        
+        <section id="sobre">
+            <h1>Sobre mim</h1>
+            <img id ="minhafoto" src="imagens/thiagofinal.png" alt="Minha foto">
+            <p>Sou um entusiasta da tecnologia e me interesso por games, smartphones, softwares de computador, dentre outros.</p>
+            <p>Recentemente resolvi buscar novos desafios e estou em busca da minha primeira oportunidade de emprego na área de tecnogolia.</p>
+            <p>Empenho e dedicação não irão faltar nesta nova jornada.</p>
+            <p>Adoro desafios e não sossego até solucioná-los.</p>
+        </section>
+
+
+        <section id="experiencia">
+            <h1>Experiência</h1>
+            <p>Possuo conhecimento nas seguintes linguagens:</p>
+            <ul>
+                <li>Java</li>
+                <li>JavaScript</li>
+                <li>HTML</li>
+                <li>Python</li>
+                <li>Typescript</li>
+            </ul>
+        </section>
+
+
+        <section id="projetos">
+            <h1>Projetos</h1>
+            <p>Os projetos que já fiz podem ser encontrados no meu Github</p>
+            <ul>
+                <li>Projeto Android</li>
+                <li>Projeto Cordel</li>
+                <li>Projeto Login</li>
+                <li>Projeto Social</li>
+                <li>Em desenvolvimento</li>
+            </ul>
+        </section>
+
+        <section id="contato">
+            <h1>Contato</h1>
+            <p>Você pode entrar em contato comigo através das seguintes plataformas:</p>
+            <ul>
+                <li>Github</li>
+                <li>Linkedin</li>
+                <li>Twitter</li>
+            </ul>
+
+    </main>
+    <footer>
+        <p>Desenvolvido por <a href="https://www.linkedin.com/in/honoratothiago/" target="_blank">Thiago Honorato</a></p>
+    </footer>
+    <script>
+        function clickMenu() {
+            if (itens.style.display == 'block') {
+                itens.style.display = 'none'
+            } else {
+                itens.style.display = 'block'
+            } 
+            
+        }
+    </script>
+</body>
+</html>
