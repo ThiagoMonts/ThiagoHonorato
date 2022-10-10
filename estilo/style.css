@@ -5,12 +5,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Satisfy&display=swap');
 
 :root {
-    --cor0: #3CC3C8;
-    --cor1: #00B6BD;
-    --cor2: #00858A;
-    --cor3: #123C3D;
-    --cor4: #003B3D;
-    --cor5: #01afda;
+    --cor0: #040F0F;
+    --cor1: #797270;
+    --cor2: #3D52D5;
+    --cor3: #0496FF;
+    --cor4: #FCFFFC;
 
     --fonte-padrao: Arial, Verdana, Helvetica, sans-serif;
     --fonte-destaque: 'Satisfy', cursive;
@@ -29,22 +28,22 @@ html {
 }
 
 header {
-    background-color: grey;
+    background-color: var(--cor0);
 }
 
 header > p {
     font-family: var(--fonte-destaque);    
     font-weight: bolder;
     font-size: 1.3em;
-    color: white;
+    color: var(--cor3);
     padding: 10px;
     text-align: center;
 
 }
 
 span#burguer {
-    background-color: rgb(48, 48, 48);
-    color: white;
+    background-color: var(--cor0);
+    color: var(--cor3);
     display: block;
     text-align: left;
     padding: 10px;
@@ -52,8 +51,22 @@ span#burguer {
 }
 
 span#burguer:hover{
-    background-color: white;
-    color: black;
+    background-color: var(--cor4);
+    color: var(--cor3);
+}
+
+span#light_mode {
+    background-color: var(--cor0);
+    color: var(--cor3);
+    display: block;
+    text-align: left;
+    padding: 10px;
+    cursor: pointer;
+}
+
+span#light_mode:hover{
+    background-color: var(--cor4);
+    color: var(--cor3);
 }
 
 nav {
@@ -69,13 +82,14 @@ nav > ul > li > a {
     padding: 10px;
     text-decoration: none;
     text-align: left;
-    background-color: rgb(87, 87, 87);
+    background-color: var(--cor3);
     color: white;
     border-top: 2px solid black;
 }
 
 nav > ul > li > a:hover  {
-    background-color: gray;
+    background-color: var(--cor4);
+    color: var(--cor0);
 }
 
 nav > ul > li > a > span {
@@ -85,11 +99,11 @@ nav > ul > li > a > span {
 }
 
 body {
-    background: black;
+    background: var(--cor0);
 }
 
 main {
-    background-color: rgba(255, 255, 255, 0.817);
+    background-color: var(--cor4);
     width: 90vw;
     margin: auto;
     margin-top: 20px;
@@ -98,7 +112,7 @@ main {
 }
 
 section > h1 {
-    background-color: rgba(0, 0, 0, 0.707);
+    background-color: var(--cor3);
     text-align: center;
     margin: 20px;
     border-radius: 10px;
@@ -117,39 +131,49 @@ section > p {
 
 h1 {
     text-align: center;
-    color: white;
+    color: var(--cor4);
     font-size: 2em;
-    box-shadow: 2px 2px 2px black;
+    box-shadow: 2px 2px 2px var(--cor0);
 }
 
 img {
     display: block;
     margin: auto;
-    width: 300px;
     border-radius: 20px;
+}
+
+img#ola {
+    width: 300px;
 }
 
 img#minhafoto {
     width: 180px;
+
+}
+
+img#logo {
+    width: 80px;
+    padding: 10px;
+    border-radius: 0px;
 }
 
 footer {
-    background-color: var(--cor);
-    color: white;
+    background-color: var(--cor0);
+    color: var(--cor4);
     text-align: center;
     font-size: 1em;
     padding: 5px;
 }
 
 footer a {
-    color: white;
+    color: var(--cor4);
     font-weight: bolder;
     text-decoration: none;
 }
 
 footer a:hover {
     text-decoration: underline;
-    color: var(--cor5);
+    color: var(--cor3);
 }
 
 
