@@ -74,21 +74,18 @@ span#light_mode:hover{
 }
 
 #menu {
-    display: block;
+    display: none;
     position: absolute;
     width: 100%;
     top: 70px;
     right: 0%;
     height: calc(100vh - 70px);
     z-index: 1000;
+    justify-content: baseline;
 }
 
-nav {
-    display: none;
-}
-
-nav > ul {
-    list-style-type: none;
+#menu.active {
+    display: block;
 }
 
 nav > ul > li > a {

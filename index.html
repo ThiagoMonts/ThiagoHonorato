@@ -112,14 +112,15 @@
         <p>Desenvolvido por <a href="https://www.linkedin.com/in/honoratothiago/" target="_blank">Thiago Honorato</a></p>
     </footer>
     <script>
-        function clickMenu() {
-            if (menu.style.display == 'block') {
-                menu.style.display = 'none'
-            } else {
-                menu.style.display = 'block'
-            } 
-            
+        const burguer = document.getElementById('burguer');
+
+        function toggleMenu() {
+            const menu = document.getElementById('menu');
+            menu.classList.toggle('active');
         }
+
+        burguer.addEventListener('click', toggleMenu);
+        
     </script>
 </body>
 </html>
