@@ -17,7 +17,7 @@
 </head>
 <body>
     <header id="header">
-        <span id="burguer" class="material-icons" onclick="clickMenu()">menu</span>
+        <span id="burguer" class="material-icons">menu</span>
         <p id="logo">&lt; Th &gt;</p>
         <nav id="menu">
             <ul>
@@ -111,16 +111,6 @@
     <footer>
         <p>Desenvolvido por <a href="https://www.linkedin.com/in/honoratothiago/" target="_blank">Thiago Honorato</a></p>
     </footer>
-    <script>
-        const burguer = document.getElementById('burguer');
-
-        function toggleMenu() {
-            const menu = document.getElementById('menu');
-            menu.classList.toggle('active');
-        }
-
-        burguer.addEventListener('click', toggleMenu);
-        
-    </script>
+    <script src="script.js"></script>
 </body>
 </html>
