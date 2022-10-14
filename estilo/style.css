@@ -27,9 +27,17 @@ html {
     height: 100vh;
 }
 
+body {
+    background: var(--cor4);
+}
+
+body.dark {
+    background: var(--cor0);
+    color: var(--cor4);
+}
+
 header {
     height: 70px;
-    background-color: var(--cor0);
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -46,7 +54,6 @@ header > p {
 }
 
 span#burguer {
-    background-color: var(--cor0);
     color: var(--cor3);
     display: block;
     text-align: left;
@@ -55,11 +62,59 @@ span#burguer {
 }
 
 span#burguer:hover{
-    background-color: var(--cor4);
+    background-color: var(--cor1);
     color: var(--cor3);
 }
 
-span#light_mode {
+.checkbox {
+    opacity: 0;
+    position: absolute;
+}
+
+.label {
+    background-color: var(--cor1);
+    border-radius: 50px;
+    cursor: pointer;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: var(--cor4);
+    padding: 5px;
+    position: relative;
+    height: 26px;
+    width: 50px;
+    right: 15px;
+    transform: scale(1.3);
+}
+
+.label .ball {
+    background-color: var(--cor4);
+    border-radius: 50px;
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    
+    height: 22px;
+    width: 22px;
+
+    transform: translateX(0px);
+    transition: transform 0.2s linear;
+}
+
+.checkbox:checked + .label .ball {
+    transform: translateX(24px);
+}
+
+.fa-moon {
+    color: var(--cor3);
+}
+
+.fa-sun {
+    color: var(--cor3);
+}
+
+/*span#light_mode {
     background-color: var(--cor0);
     color: var(--cor3);
     display: block;
@@ -71,7 +126,7 @@ span#light_mode {
 span#light_mode:hover{
     background-color: var(--cor4);
     color: var(--cor3);
-}
+}*/
 
 #menu {
     display: none;
@@ -109,17 +164,11 @@ nav > ul > li > a > span {
     vertical-align: middle;
 }
 
-body {
-    background: var(--cor0);
-}
-
 main {
-    background-color: var(--cor4);
     width: 90vw;
     margin: auto;
     border-radius: 10px;
     padding: 10px;
-    color: var(--cor0);
 }
 
 section {
@@ -152,6 +201,11 @@ section.projetos > a {
     text-decoration: none;
 }
 
+section.projetos > a:hover {
+    text-decoration: none;
+    color: var(--cor3);
+}
+
 section.projetos > a > div > img {
     width: 200px;
     padding: 10px;
@@ -161,11 +215,12 @@ section.projetos > a > div > p {
     text-align: center;
     text-decoration: none;
 }
+
 h1 {
     text-align: center;
     color: var(--cor4);
     font-size: 2em;
-    box-shadow: 2px 2px 2px var(--cor0);
+    box-shadow: 3px 3px 7px 2px var(--cor1);
 }
 
 img {
@@ -256,15 +311,12 @@ img#logo {
 
 
 footer {
-    background-color: var(--cor0);
-    color: var(--cor4);
     text-align: center;
     font-size: 1em;
     padding: 5px;
 }
 
 footer a {
-    color: var(--cor4);
     font-weight: bolder;
     text-decoration: none;
 }
