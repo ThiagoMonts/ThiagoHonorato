@@ -55,8 +55,6 @@ header > p {
 
 span#burguer {
     color: var(--cor3);
-    display: block;
-    text-align: left;
     padding: 10px;
     cursor: pointer;
 }

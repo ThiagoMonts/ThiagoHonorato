@@ -19,19 +19,17 @@
     }
 
     main::after {
-        content: 'Essa impressão foi feita através do site: www...';
+        content: 'Essa impressão foi feita através do site: https://thiagomonts.github.io/ThiagoHonorato/';
         text-decoration: overline;
     }
 }
 
 @media screen and (min-width: 768px) and (max-width: 992px) { /* TABLET */
-    body {
 
-    }
 }
 
 @media screen and (min-width: 992px) and (max-width: 1200px) { /* DESKTOP */
-    
+
 }
 
 @media screen and (min-width: 1200px) { /* GRANDES TELAS */
