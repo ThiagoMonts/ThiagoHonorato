@@ -5,16 +5,21 @@ import { FaLinkedin } from 'react-icons/fa'
 const SocialMedia = () => {
   return (
     <div className='app__social'>
+      <a href="https://www.linkedin.com/in/honoratothiago/" target={'_blank'}>
         <div>
-            <a href="https://www.linkedin.com/in/honoratothiago/" target={'_blank'}><FaLinkedin/></a>
+          <FaLinkedin />
         </div>
+      </a>
+      <a href="https://twitter.com/thiagomonts" target={'_blank'}>
         <div>
-            <a href="https://twitter.com/thiagomonts" target={'_blank'}><BsTwitter /></a>
+          <BsTwitter />
         </div>
+      </a>
+      <a href="https://www.instagram.com/thiagomonts/" target={'_blank'}>
         <div>
-            <a href="https://www.instagram.com/thiagomonts/" target={'_blank'}><BsInstagram />
-            </a>
+          <BsInstagram />
         </div>
+      </a>
     </div>
   )
 }

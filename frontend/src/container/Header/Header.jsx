@@ -1,5 +1,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
+import { TypeAnimation } from 'react-type-animation';
+import { FaGithub, FaCloudDownloadAlt } from 'react-icons/fa'
 
 import { AppWrap } from '../../wrapper'
 import { images } from '../../constants';
@@ -23,22 +25,35 @@ const Header = () => (
       transition={{ duration: 0.5 }}
       className="app__header-info"
     >
-      <div className="app__header-badge">
-        <div className="badge-cmp app__flex">
-          <span>👋</span>
-          <div style={{ marginLeft: 20 }}>
-            <p className="p-text">Olá, Eu sou</p>
-            <h1 className="head-text">Thiago</h1>
-          </div>
+      <div className="app__header-info-content app__flex">
+        <p className="p-text">Olá, Meu nome é </p>
+        <h1 className='head-text'>Thiago
+          <TypeAnimation
+            sequence={[' Honorato', 1700, ' Monts', 2000]}
+            style={{ fontSize: '1em' }}
+            repeat={Infinity}
+          /></h1>
+        <p className='p-text'>Sou Desenvolvedor Front-end</p> <br />
+        <p className='p-text'>No momento estou no 3º período do curso de Análise e Desenvolvimento de Sistemas.</p>
+
+        <div>
+          <a href="https://github.com/ThiagoMonts" target='_blank'>
+            <button type='button'>
+              <FaGithub />
+              <p>Github</p>
+            </button>
+          </a>
+          <a href="https://github.com/ThiagoMonts" target='_blank'>
+            <button type='button'>
+              <FaCloudDownloadAlt />
+              <p>Currículo</p>
+            </button>
+          </a>
         </div>
 
-        <div className="tag-cmp app__flex">
-          <p className="p-text">Desenvolvedor Front-end</p>
-          <p className="p-text">Freelancer</p>
-        </div>
+
       </div>
     </motion.div>
-
     <motion.div
       whileInView={{ opacity: [0, 1] }}
       transition={{ duration: 0.5, delayChildren: 0.5 }}
@@ -52,18 +67,6 @@ const Header = () => (
         alt="profile_circle"
         className="overlay_circle"
       />
-    </motion.div>
-
-    <motion.div
-      variants={scaleVariants}
-      whileInView={scaleVariants.whileInView}
-      className="app__header-circles"
-    >
-      {[images.javascript, images.react, images.sass].map((circle, index) => (
-        <div className="circle-cmp app__flex" key={`circle-${index}`}>
-          <img src={circle} alt="profile_bg" />
-        </div>
-      ))}
     </motion.div>
   </div>
 );
