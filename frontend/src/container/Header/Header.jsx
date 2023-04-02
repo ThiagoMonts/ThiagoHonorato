@@ -39,14 +39,12 @@ const Header = () => (
         <div>
           <a href="https://github.com/ThiagoMonts" target='_blank'>
             <button type='button'>
-              <FaGithub />
-              <p>Github</p>
+              <FaGithub /> <p>Github</p>
             </button>
           </a>
           <a href="https://github.com/ThiagoMonts" target='_blank'>
             <button type='button'>
-              <FaCloudDownloadAlt />
-              <p>Currículo</p>
+              <FaCloudDownloadAlt /> <p>Currículo</p>
             </button>
           </a>
         </div>
