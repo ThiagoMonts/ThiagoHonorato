@@ -7,20 +7,18 @@ import { urlFor, client } from '../../client'
 import './Skills.scss'
 
 const Skills = () => {
-  const [experience, setExperience] = useState([])
+  const [experiences, setExperiences] = useState([])
   const [skills, setSkills] = useState([])
 
   useEffect(() => {
     const query = '*[_type == "experiences"]'
     const skillsQuery = '*[_type == "skills"]'
 
-    client.fetch(query)
-      .then((data) => {
-        setExperience(data)
+    client.fetch(query).then((data) => {
+        setExperiences(data)
       })
 
-    client.fetch(skillsQuery)
-      .then((data) => {
+    client.fetch(skillsQuery).then((data) => {
         setSkills(data)
       })
   }, [])
@@ -48,7 +46,7 @@ const Skills = () => {
 
 
         <div className="app__skills-exp">
-          {experience.map((experience) => (
+          {experiences.map((experience) => (
             <motion.div
               className="app__skills-exp-item"
               key={experience.year}
