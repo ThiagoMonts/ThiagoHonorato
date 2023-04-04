@@ -45,7 +45,7 @@ const Header = () => (
           </a>
         </div>
         <div className='app__header-info-button2'>
-          <a href="https://github.com/ThiagoMonts" target='_blank'>
+          <a href="https://github.com/ThiagoMonts/ThiagoHonorato/raw/main/frontend/.github/curriculo.pdf" target='_blank'>
             <button type='button'>
               <FaCloudDownloadAlt /> <p>Currículo</p>
             </button>
