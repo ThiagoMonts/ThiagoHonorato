@@ -46,6 +46,12 @@
 
   margin: 0 2rem;
 
+  @media screen and (max-width: 620px) {
+    h1 {
+      font-size: 2rem;
+    }
+  }
+
   @media screen and (max-width: 1200px) {
     width: 100%;
     margin-right: 0rem;
@@ -86,10 +92,16 @@
         margin: 2rem 0 0 0;
         font-family: var(--font-base);
         cursor: pointer;
+        
+        @media screen and (max-width: 620px) {
+          width: 80px;
+        }
+        p {
+          @media screen and (max-width: 620px) {
+            display: none;
+          }
+        }
       }
-    }
-    @media screen and (max-width: 620px) {
-      flex-direction: column;;
     }
   }
 }

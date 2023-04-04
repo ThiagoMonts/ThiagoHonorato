@@ -22,6 +22,11 @@
     p {
         font-size: 2rem;
         font-weight: 700;
+
+        @media screen and (max-width: 620px) {
+            font-size: 1.5rem;
+        }
+
         span {
             color: var(--secondary-color);
         }
