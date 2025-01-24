@@ -33,8 +33,7 @@ const Header = () => (
             style={{ fontSize: '1em' }}
             repeat={Infinity}
           /></h1>
-        <p className='p-text'>Sou Desenvolvedor Front-end</p> <br />
-        <p className='p-text'>No momento estou no 3º período do curso de Análise e Desenvolvimento de Sistemas.</p>
+        <p className='p-text'>Sou Desenvolvedor RPA, formado no curso de Análise e Desenvolvimento de Sistemas pelo UNIESP Centro Universitário. Alguns dos meus projetos e o meu currículo podem ser encontrados logo abaixo.</p>
       </div>
       <div className='app__header-info-button app_flex'>
         <div className='app__header-info-button1'>
