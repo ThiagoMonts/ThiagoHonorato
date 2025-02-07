@@ -33,7 +33,8 @@ const Header = () => (
             style={{ fontSize: '1em' }}
             repeat={Infinity}
           /></h1>
-        <p className='p-text'>Sou Desenvolvedor RPA, formado no curso de Análise e Desenvolvimento de Sistemas pelo UNIESP Centro Universitário. Alguns dos meus projetos e o meu currículo podem ser encontrados logo abaixo.</p>
+        <p className='p-text'>Sou Desenvolvedor Front-End com experiência em React, JavaScript e Python. Meu objetivo é criar interfaces intuitivas, responsivas e escaláveis, sempre focando em performance e usabilidade. Com conhecimento em Node.js, APIs e metodologias ágeis, também trago uma visão estratégica para otimização de processos. Busco constantemente inovação e novos desafios.</p>
+
       </div>
       <div className='app__header-info-button app_flex'>
         <div className='app__header-info-button1'>
